@@ -1,0 +1,44 @@
+body {
+    position: relative;
+    /* background-image: url("../app/img/space1.jpg"); */
+    margin: 0;
+    overflow: hidden; /* Asegura que el canvas no cause desbordamiento */
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#gameCanvas {
+    position: absolute;
+    z-index: 1; /* Asegúrate de que el canvas tenga un índice Z menor */
+    /* Otros estilos para el canvas */
+}
+
+#userName, #score ,#lives {
+    position: absolute;
+    z-index: 2; /* Un valor más alto para que aparezcan encima del canvas */
+    /* Otros estilos que puedas necesitar */
+    color: wheat;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#score {
+    top: 20px;
+    right: 50px;
+}
+
+#lives {
+    bottom: 20px;
+    right: 50px;
+}
+
+#userName {
+    top: 20px;
+    left: 50px;
+}
